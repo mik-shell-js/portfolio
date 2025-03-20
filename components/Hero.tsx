@@ -46,4 +46,12 @@ const Hero = () => {
                                 icon={<FaLocationArrow />}
                                 position='right'
                             />
-                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Hero
