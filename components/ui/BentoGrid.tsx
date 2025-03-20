@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-// Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
@@ -53,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["React", "Express", "Typescript"];
+  const rightLists = ["MongoDB", "NextJS", "PostgreSQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -68,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "mha57@cornell.edu";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -76,19 +75,16 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
-        //   add these two
-        //   you can generate the color from here https://cssgradient.io/
         background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      {/* add img divs */}
+      {/* Image Divs change to Next/Image */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
