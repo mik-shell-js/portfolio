@@ -1,5 +1,6 @@
 // import Image from "next/image";
 
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaBook, FaHome } from "react-icons/fa";
@@ -16,6 +17,7 @@ export default function Home() {
           { name: "Contact", link: "/contact", icon: <FaPhone /> },
         ]} />
         <Hero />
+        <Grid />
       </div>
     </main>
   );

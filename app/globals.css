@@ -32,6 +32,8 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
   }
 
   .dark {
@@ -65,17 +67,6 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border !scroll-smooth;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button {
-    @apply active:outline-none;
-  }
-}
 
 @layer utilities {
   .heading {
@@ -85,10 +76,6 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
-}
-
-@theme inline {
-  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
 @keyframes spotlight {

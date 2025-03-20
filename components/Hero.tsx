@@ -1,7 +1,7 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import { MagicButton } from './ui/MagicButton';
+import MagicButton from './MagicButton';
 import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
                 <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill="purple" />
                 <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill="blue" />
             </div>
-            <div className="h-screen w-full items-center justify-center bg-white dark:bg-black bg-white dark:bg-grid-white/[0.01] bg-grid-black/[0.01]">
+            <div className="h-screen w-full items-center justify-center bg-white dark:bg-black dark:bg-grid-white/[0.01] bg-grid-black/[0.01]">
                 <div
                     className={cn(
                         "absolute inset-0",
